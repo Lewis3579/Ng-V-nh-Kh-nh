@@ -1,7 +1,0 @@
-Question: When should accessor methods be used?
-It's okay for a method to return an object in terms of an interface that the object implements because that interface isolates you from changes to the implementing class.
-This sort of method (that returns an interface reference) is not really a "getter" in the sense of a method that just provides access to a field
-Especially for the display of data (the V in MVC) there is a need to access data and a simple getter does this job very well. Getters may be more relevant at this place than setters.
-You should always be aware of the risks involved when accessor methods are added and ensure that you clearly understand the need, before you add and use such methods. Don’t accept the reasons “they are easy to generate” and “everybody does it this way”. Use domain-specific terminology and business logic and by doing so avoid anemic domain models.
-Question: If you create a constructor method to build a DVD... allow you to do this?
-No, its not about the name of argument, it's about the the type of data that create the method signature. Both, title and category is String type and that method have the same argument then it have the same signature.
