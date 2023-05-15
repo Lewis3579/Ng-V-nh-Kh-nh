@@ -1,19 +1,19 @@
 public class Store {
     public static final int MAX_NUMBER_ORDERED = 1000;
-    private DigitalVideoDics[] itemInStore = new DigitalVideoDics[MAX_NUMBER_ORDERED];
-    private int qtyOrdered = 0;
-    public int j;
+    private static DigitalVideoDics[] itemInStore = new DigitalVideoDics[MAX_NUMBER_ORDERED];
+    private static int qtyOrdered = 0;
+    public static int j;
 
-    public void addDigitalVideoDics(DigitalVideoDics item) {
+    public static void addDigitalVideoDics(DigitalVideoDics item) {
         if (qtyOrdered == MAX_NUMBER_ORDERED - 1)
             System.out.println("The cart is full.");
         else {
             itemInStore[qtyOrdered] = item;
-            this.qtyOrdered++;
+            qtyOrdered++;
         }
     }
 
-    public void removeDigitalVideoDics(DigitalVideoDics item) {
+    public static void removeDigitalVideoDics(DigitalVideoDics item) {
         if (qtyOrdered == 0)
             System.out.println("There is no item!");
         else {
