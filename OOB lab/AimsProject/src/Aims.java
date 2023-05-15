@@ -23,5 +23,6 @@ public class Aims {
         anOrder.printCart();
         System.out.println("Total numbers of dvd is: " + DigitalVideoDics.nb());
         anOrder.cartTest("The lion");
+        anOrder.cartTest("3");
     }
 }
