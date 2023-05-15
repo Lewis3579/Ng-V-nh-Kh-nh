@@ -49,7 +49,7 @@ public class Cart {
             for (int i = j; i < qtyOrdered - 1; i++) {
                 itemsOrdered[i] = itemsOrdered[i + 1];
             }
-            qtyOrdered--;
+            this.qtyOrdered--;
         }
     }
 
