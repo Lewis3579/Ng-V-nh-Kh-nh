@@ -21,6 +21,7 @@ public class Aims {
         dvdList.add(dvd6);
         anotherCart.addDigitalVideoDics(dvdList);
         anOrder.printCart();
+        anotherCart.printCart();
         System.out.println("Total numbers of dvd is: " + DigitalVideoDics.nb());
         anOrder.cartTest("The lion");
     }
