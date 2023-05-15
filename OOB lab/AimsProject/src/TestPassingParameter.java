@@ -17,6 +17,8 @@ public class TestPassingParameter {
         o1 = o2;
         o2 = tmp;
     }
+    
+    // =>> passing value
 
     public static void changeTitle(DigitalVideoDics dvd, String title) {
         String oldTitle = dvd.getTitle();
