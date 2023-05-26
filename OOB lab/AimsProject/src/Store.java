@@ -29,4 +29,8 @@ public class Store {
             qtyOrdered--;
         }
     }
+
+    public Store() {
+
+    }
 }
