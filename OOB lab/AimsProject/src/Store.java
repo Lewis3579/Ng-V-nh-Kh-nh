@@ -1,36 +1,30 @@
+import Media.Media;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Store {
     public static final int MAX_NUMBER_ORDERED = 1000;
-    private static DigitalVideoDics[] itemInStore = new DigitalVideoDics[MAX_NUMBER_ORDERED];
-    private static int qtyOrdered = 0;
+    private static ArrayList<Media> itemsInStore = new ArrayList<Media>();
     public static int j;
 
-    public static void addDigitalVideoDics(DigitalVideoDics item) {
-        if (qtyOrdered == MAX_NUMBER_ORDERED - 1)
+    public static void addMedia(Media item) {
+        if (itemsInStore.size() == MAX_NUMBER_ORDERED)
             System.out.println("The cart is full.");
         else {
-            itemInStore[qtyOrdered] = item;
-            qtyOrdered++;
+            itemsInStore.add(item);
         }
     }
 
-    public static void removeDigitalVideoDics(DigitalVideoDics item) {
-        if (qtyOrdered == 0)
+    public static void removeMedia(Media item) {
+        if (itemsInStore.size() == 0)
             System.out.println("There is no item!");
         else {
-            for (int i = 0; i < qtyOrdered; i++) {
-                if (itemInStore[i] == item) {
-                    itemInStore[i] = null;
+            for (int i = 0; i < itemsInStore.size(); i++) {
+                if (itemsInStore.get(i) == item) {
+                    itemsInStore.remove(i);
                     j = i;
                 }
             }
-            for (int i = j; i < qtyOrdered - 1; i++) {
-                itemInStore[i] = itemInStore[i + 1];
-            }
-            qtyOrdered--;
         }
-    }
-
-    public Store() {
-
     }
 }
