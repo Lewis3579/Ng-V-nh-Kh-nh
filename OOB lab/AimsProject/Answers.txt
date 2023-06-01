@@ -1,0 +1,4 @@
+DigitalVideoDisc or CompactDisc, Book.
+Do the same with the sort() method.
+No, unless we create another empty list to store the addition list.
+Depend, a running code is a running code.
