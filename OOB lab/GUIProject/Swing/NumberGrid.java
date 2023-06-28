@@ -3,7 +3,6 @@ package Swing;
 import java.awt.BorderLayout;
 import java.awt.ComponentOrientation;
 import java.awt.Container;
-import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,7 +25,7 @@ public class NumberGrid extends JFrame {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Number Grid");
-        setSize(200, 200);
+        setSize(400, 300);
         setVisible(true);
         addButtons(panelButton);
     }
@@ -49,10 +48,11 @@ public class NumberGrid extends JFrame {
         btnReset = new JButton("C");
         panelButtons.add(btnReset);
         btnReset.addActionListener(btnListener);
+
     }
 
     public static void main(String[] args) {
-        NumberGrid NG = new NumberGrid();
+        new NumberGrid();
     }
 
     private class ButtonListener implements ActionListener {

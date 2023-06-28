@@ -15,7 +15,7 @@ public class SwingAccumulator extends JFrame {
     public SwingAccumulator() {
         Container cp = getContentPane();
         cp.setLayout(new GridLayout(2, 2));
-        cp.add(new JTextField(10));
+        cp.add(new JLabel("Enter an Integer: "));
         tfInput = new JTextField(10);
         cp.add(tfInput);
         tfInput.addActionListener(new TFInputListener());
